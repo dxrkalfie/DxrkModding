@@ -70,7 +70,21 @@ nav a:hover {
   animation: fadeUp 1s ease;
 }
 
-/* Team Cards */
+/* Team Section */
+.team {
+  border: 1px solid rgba(0, 255, 204, 0.3); /* teal border */
+  background: rgba(0, 255, 204, 0.05); /* subtle teal tint */
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.2);
+}
+
+.team-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00ffcc;
+  text-shadow: 0 0 12px #00ffcc;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -78,18 +92,18 @@ nav a:hover {
 }
 
 .card {
-  background: var(--bg-dark);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  background: rgba(25, 25, 25, 0.9);
   border-radius: 16px;
   padding: 25px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .card:hover {
   transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 0 20px var(--accent);
+  box-shadow: 0 0 20px #00ffcc;
 }
 
 .card img {
@@ -97,17 +111,16 @@ nav a:hover {
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 12px var(--accent);
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 12px #00ffcc;
 }
 
 .card h3 {
   margin-top: 18px;
   font-size: 1.3rem;
-  color: var(--accent);
-  text-shadow: 0 0 8px var(--accent);
+  color: #00ffcc;
+  text-shadow: 0 0 8px #00ffcc;
 }
-
 /* Friends Section */
 .friends {
   border: 1px solid rgba(255, 140, 0, 0.3); /* warmer color */
@@ -326,6 +339,7 @@ footer {
   margin-top: 40px;
 
 }
+
 
 
 
