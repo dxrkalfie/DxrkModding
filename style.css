@@ -108,6 +108,36 @@ nav a:hover {
   text-shadow: 0 0 8px var(--accent);
 }
 
+/* Friends Section */
+.friends {
+  border: 1px solid rgba(255, 140, 0, 0.3); /* warmer color */
+  background: rgba(255, 140, 0, 0.05); /* subtle orange tint */
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.2);
+}
+
+.friends-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff8c00;
+  text-shadow: 0 0 12px #ff8c00;
+}
+
+.friend-card {
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  background: rgba(25, 25, 25, 0.9);
+}
+
+.friend-card img {
+  border: 3px solid #ff8c00;
+  box-shadow: 0 0 12px #ff8c00;
+}
+
+.friend-card h3 {
+  color: #ff8c00;
+  text-shadow: 0 0 6px #ff8c00;
+}
+
 /* Audio Control */
 #audio-control {
   position: fixed;
@@ -236,5 +266,6 @@ footer {
   margin-top: 40px;
 
 }
+
 
 
