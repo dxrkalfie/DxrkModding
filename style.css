@@ -206,13 +206,41 @@ body.light-mode .card {
   transition: 0.3s all ease;
   margin-top: 20px;
 }
+.show-btn2 {
+  background: #1f1f1f;
+  color: #00ffcc;
+  border: 2px solid #00ffcc;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  margin-top: 20px;
+}
 
 .show-btn:hover {
   background: #00ffcc;
   color: #111;
 }
 
+.show-btn2:hover {
+  background: #00ffcc;
+  color: #111;
+}
+
 .method-content {
+  margin-top: 20px;
+  padding: 25px;
+  background: rgba(20,20,20,0.85);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,255,204,0.2);
+  color: #f1f1f1;
+  display: none;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.method-content2 {
   margin-top: 20px;
   padding: 25px;
   background: rgba(20,20,20,0.85);
@@ -234,12 +262,32 @@ body.light-mode .card {
   margin-bottom: 0.5rem;
 }
 
+.method-content2 h1,
+.method-content2 h2,
+.method-content2 h3 {
+  color: #00ffcc;
+  text-shadow: 0 0 6px #00ffcc;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .method-content p {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
+.method-content2 p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 .method-content code {
+  background: rgba(0,255,204,0.1);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+.method-content2 code {
   background: rgba(0,255,204,0.1);
   padding: 2px 5px;
   border-radius: 4px;
@@ -253,7 +301,19 @@ body.light-mode .card {
   overflow-x: auto;
 }
 
+.method-content2 pre {
+  background: rgba(0,255,204,0.1);
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
 .method-content ul, .method-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.method-content2 ul, .method-content2 ol {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -266,6 +326,7 @@ footer {
   margin-top: 40px;
 
 }
+
 
 
 
