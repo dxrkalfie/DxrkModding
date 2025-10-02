@@ -77,8 +77,8 @@ nav a:hover {
   gap: 25px;
 }
 
-.modder-grid{
-  display:grid
+.modder-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 25px;
 }
@@ -242,3 +242,4 @@ footer {
   margin-top: 40px;
 
 }
+
