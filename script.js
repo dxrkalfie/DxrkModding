@@ -230,4 +230,31 @@ Thanks for stopping by, and much love from all of us here at DxrkModding. ❤️
     });
   }
 
+  const showBtn2 = document.getElementById("show-method-btn2");
+  const methodContent2 = document.getElementById("method-content2");
+
+  if (showBtn2 && methodContent2) {
+    showBtn.addEventListener("click", () => {
+      if (methodContent.style.display === "block") {
+        methodContent.style.display = "none";
+        showBtn.textContent = "Read Method";
+        return;
+      }
+
+      methodContent.style.display = "block";
+      methodContent.innerHTML = "Loading...";
+
+      fetch("https://raw.githubusercontent.com/dxrkalfie/Modding-Methods/main/Modding%20Methods/Basic/How%20to%20Mod.md")
+        .then(response => response.text())
+        .then(data => {
+          methodContent.innerHTML = marked.parse(data); 
+          showBtn.textContent = "Hide Method";
+        })
+        .catch(err => {
+          methodContent.textContent = "Failed to load method: " + err;
+        });
+    });
+  }
+
 });
+
