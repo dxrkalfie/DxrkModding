@@ -77,6 +77,12 @@ nav a:hover {
   gap: 25px;
 }
 
+.modder-grid{
+  display:grid
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
 .card {
   background: var(--bg-dark);
   border-radius: 16px;
@@ -234,4 +240,5 @@ footer {
   background: rgba(15, 15, 15, 0.7);
   border-top: 1px solid rgba(255,255,255,0.05);
   margin-top: 40px;
+
 }
