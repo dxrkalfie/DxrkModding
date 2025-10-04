@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
     draw() {
-      ctx.fillStyle = "#00ffcc";
+      ctx.fillStyle = "#00537D";
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.size, 0, Math.PI*2);
       ctx.closePath();
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let dy = particles[a].y - particles[b].y;
         let dist = Math.sqrt(dx*dx + dy*dy);
         if (dist < 120) {
-          ctx.strokeStyle = "rgba(0,255,204,0.2)";
+          ctx.strokeStyle = "rgba(0,83,125,0.2)";
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(particles[a].x, particles[a].y);
@@ -257,5 +257,6 @@ Thanks for stopping by, and much love from all of us here at DxrkModding. ❤️
   }
 
 });
+
 
 
