@@ -14,8 +14,7 @@ body {
 }
 
 :root {
-  --accent: #00537D; /* updated main color */
-  --core: #00537D;
+  --accent: #00ffcc; /* updated main color */
   --bg-dark: rgba(20, 20, 20, 0.75);
   --glass: rgba(255, 255, 255, 0.05);
 }
